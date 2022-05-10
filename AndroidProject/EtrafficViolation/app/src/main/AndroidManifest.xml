@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wms.mwt.etrafficviolation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.AddViolationActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.AddViolationLogActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.UpdateViolationActivity" />
+        <activity android:name=".Activities.UpdateViolationLogActivity" />
+        <activity android:name=".Activities.ViolationInfoActivity" />
+        <activity android:name=".Activities.ViolationLogInfoActivity" />
+        <activity android:name=".Activities.VehicleInfoActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.SearchActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.LoginActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.RegisterActivity" />
+        <activity android:windowSoftInputMode="adjustResize" android:name=".Activities.SearchResultActivity"></activity>
+    </application>
+
+</manifest>

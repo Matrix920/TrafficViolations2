@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar"
+        android:orientation="vertical"
+        tools:context="com.wms.mwt.etrafficviolation.Activities.AddViolationLogActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/edtPlugedNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:hint="@string/str_pluggedNumber"
+                android:completionThreshold="1"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+
+                android:hint="@string/str_date"
+                android:inputType="date"
+                android:padding="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/str_location"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/edtIsPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:hint="@string/str_is_paid"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+
+
+
+
+            <com.wms.mwt.etrafficviolation.Widjets.CustomAutoCompleteTextView
+                android:id="@+id/edtViolation"
+                android:layout_width="match_parent"
+                android:completionThreshold="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_violation"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+
+
+
+
+            <Button
+                android:id="@+id/btnAddViolationLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_btn_login"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/btn_save"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>

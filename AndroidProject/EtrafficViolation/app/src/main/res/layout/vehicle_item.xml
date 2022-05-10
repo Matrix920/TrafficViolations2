@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/layout_v_l_details_padding"
+    android:layout_marginBottom="@dimen/layout_v_l_details_padding"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/items_group"
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="@dimen/item_name_margin_right"
+            android:textColor="@color/item_name_color"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_driver"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewDriver"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/str_driver"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/items_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginRight="@dimen/item_name_margin_right"
+            android:textColor="@color/item_name_color"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_pluggedNumber"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtViewPlugedNumber"
+            android:text="@string/str_pluggedNumber"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

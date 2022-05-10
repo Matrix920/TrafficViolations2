@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EtrafficViolation</string>
+    <string name="str_pluggedNumber">Pluged Number</string>
+    <string name="str_driver">Driver</string>
+    <string name="str_date">Date( Day/Month/Year )</string>
+    <string name="str_tax">Tax</string>
+    <string name="str_violation">Violation</string>
+    <string name="str_location">Location</string>
+    <string name="str_type">Car Type</string>
+    <string name="str_category">Car Category</string>
+    <string name="btn_register">Register</string>
+    <string name="str_registeration_date">Registeration( Day/Month/Year )</string>
+    <string name="str_production_date">Production( Day/Month/Year )</string>
+    <string name="str_is_cross_out">Is Cross Out ?(0 -> No / 1 -> Yes)</string>
+    <string name="btn_login">Login</string>
+    <string name="str_traffic_violation">E - Traffic Violations</string>
+    <string name="btn_add_violation">Save</string>
+    <string name="btn_save">Save</string>
+    <string name="str_is_paid">Is Paid?(0 -> No / 1 -> Yes)</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_crossout">Cross out</string>
+    <string name="searchPlugedNumber">Pluged Number</string>
+    <string name="searchLocation">Location</string>
+    <string name="searchDriver">Driver</string>
+    <string name="searchDate">Date</string>
+    <string name="edt_from_date">from date</string>
+    <string name="edt_to_date">to date</string>
+    <string name="btn_search">Search</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="btn_pay">Pay</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar"
+    android:orientation="vertical"
+    tools:context=".Activities.RegisterActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <EditText
+            android:id="@+id/edtDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:hint="@string/str_driver"
+            android:inputType="text"
+            android:padding="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtPlugedNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:hint="@string/str_pluggedNumber"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/edtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:hint="@string/str_type"
+            android:inputType="textCapWords"
+            android:padding="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/str_category"
+            android:background="@color/white"
+            android:padding="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtRegisterationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/str_registeration_date"
+            android:background="@color/white"
+            android:inputType="date"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/edtProductionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_production_date"
+            android:inputType="date"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:padding="11dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIsCrossOut"
+            android:hint="@string/str_is_cross_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:background="@color/white"
+            android:padding="10dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_btn_login"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/btn_register"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_btn_login"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:id="@+id/btnLogin"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

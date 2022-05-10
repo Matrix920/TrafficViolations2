@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar"
+        android:orientation="vertical"
+        tools:context="com.wms.mwt.etrafficviolation.Activities.VehicleInfoActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_height="150dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_driver"
+                android:padding="1dp"/>
+
+            <TextView
+                android:id="@+id/txtViewDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:hint="@string/str_driver"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_pluggedNumber"
+                android:padding="1dp"/>
+
+            <TextView
+                android:id="@+id/txtViewPlugedNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:inputType="number"
+                android:hint="@string/str_pluggedNumber"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_type"
+                android:padding="1dp"/>
+            <TextView
+                android:id="@+id/txtViewType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:hint="@string/str_type"
+                android:inputType="textCapWords"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_category"
+                android:padding="1dp"/>
+            <TextView
+                android:id="@+id/txtViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/str_category"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_registeration_date"
+                android:padding="1dp"/>
+            <TextView
+                android:id="@+id/txtViewRegisterationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/str_registeration_date"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_production_date"
+                android:padding="1dp"/>
+            <TextView
+                android:id="@+id/txtViewProductionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_production_date"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:padding="11dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_is_cross_out"
+                android:padding="1dp"/>
+            <TextView
+                android:id="@+id/txtViewIsCrossOut"
+                android:hint="@string/str_is_cross_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:padding="10dp"/>
+
+
+
+
+            <Button
+                android:id="@+id/btnCrossout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_btn_login"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/btn_crossout"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>

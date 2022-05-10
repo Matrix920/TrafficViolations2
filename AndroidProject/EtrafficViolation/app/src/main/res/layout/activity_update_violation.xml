@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/actionbar"
+        android:layout_height="match_parent"
+        tools:context="com.wms.mwt.etrafficviolation.Activities.UpdateViolationActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_violation"
+                android:padding="1dp"/>
+            <EditText
+                android:id="@+id/edtViolation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:hint="@string/str_violation"
+                android:inputType="text"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/str_tax"
+                android:padding="1dp"/>
+            <EditText
+                android:id="@+id/edtTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:hint="@string/str_tax"
+                android:inputType="numberDecimal"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_btn_login"
+                android:paddingLeft="25dp"
+                android:id="@+id/btnUpdate"
+                android:paddingRight="25dp"
+                android:text="@string/btn_save"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </RelativeLayout>

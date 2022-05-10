@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/search_result_padding"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="@dimen/items_group"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/item_name_margin_right"
+        android:textColor="@color/item_name_color"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewToatalTaxTxt"
+
+        android:text="@string/total_tax"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_margin="@dimen/items_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtViewToatalTaxTxt"
+        android:id="@+id/txtViewTotalTax"/>
+
+        <ListView
+            android:layout_marginTop="@dimen/list_view_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/list_view_padding"
+            android:layout_below="@id/txtViewTotalTax"
+            android:id="@+id/productsListView"></ListView>
+    </RelativeLayout>

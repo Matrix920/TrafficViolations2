@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/actionbar"
+android:orientation="vertical"
+tools:context=".Activities.SearchActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radioSearchPlugedNumber"
+        android:layout_width="match_parent"
+        android:onClick="hideAndShowSearchable"
+        android:layout_height="wrap_content"
+        android:text="@string/searchPlugedNumber"/>
+
+    <RadioButton
+        android:id="@+id/radioSearchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hideAndShowSearchable"
+        android:text="@string/searchLocation"/>
+
+    <RadioButton
+        android:id="@+id/radioSearchDriver"
+        android:onClick="hideAndShowSearchable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchDriver"/>
+
+    <RadioButton
+        android:id="@+id/radioSearchDate"
+        android:onClick="hideAndShowSearchable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchDate"/>
+</RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/llSearchDate">
+
+        <EditText
+            android:id="@+id/edtFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:hint="@string/edt_from_date"
+            android:inputType="date"
+            android:padding="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/edtToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:inputType="date"
+            android:hint="@string/edt_to_date"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtPlugedNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:hint="@string/str_pluggedNumber"
+        android:inputType="number"
+        android:padding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/edtDriver"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/str_driver"
+        android:background="@color/white"
+        android:inputType="text"
+        android:padding="10dp"/>
+
+
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"
+        android:hint="@string/str_location"
+        android:background="@color/white"
+        android:padding="10dp"/>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/bg_btn_login"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/btn_search"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
